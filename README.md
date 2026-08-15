@@ -1,2 +1,2 @@
 # JavaScript_Series
-JavaScript 
+JavaScript Series
