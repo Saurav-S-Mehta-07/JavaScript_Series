@@ -60,4 +60,28 @@ const myfunction = function(){
     console.log("Hello world!");
 }
 
-console.table([typeof(heros), typeof(obj), typeof(myfunction)])
+// console.table([typeof(heros), typeof(obj), typeof(myfunction)])
+
+
+
+// *****************************************************
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubename = "Sauravy.com"
+let anothername = myYoutubename
+anothername = "metha.com"
+// console.log(myYoutubename)
+// console.log(anothername)
+
+let userOne = {
+    email : "user@google.com",
+    upi : "gpay"
+}
+
+let userTwo = userOne
+
+userTwo["email"]= "user@gmail.com"
+
+// console.log(userOne.email)
+// console.log(userTwo.email)
