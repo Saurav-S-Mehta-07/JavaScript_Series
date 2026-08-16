@@ -1,5 +1,5 @@
 // for
-const array = [1,2,3,4,5]
+// const array = [1,2,3,4,5]
 // for (let index = 0; index < array.length; index++) {
 //     const element = array[index];
 //     console.log(element);
@@ -38,3 +38,41 @@ const array = [1,2,3,4,5]
 //     console.log(i)
 // }
 
+// ***********************************
+
+// for of
+// const array = [1,2,3,4,5]
+
+// for (const element of array) {
+//     console.log(element)
+// }
+
+// const str = "hello world"
+// for(const ch of str){
+//     console.log(ch)
+// }
+
+
+// **********************************
+//maps
+
+const map = new Map()
+map.set("IN", "India")
+map.set("IN", "India")
+map.set("USA", "United States of America")
+map.set("ch", "China")
+
+// console.log(map)
+
+// for (const [key, value] of map) {
+//     console.log(key, ":-", value)
+// }
+
+const myObject = {
+    "game1" : "NFS",
+    "game2" : "Spiderman"
+}
+
+// for (const [key, value] of myObject) { //not iterable here
+//     console.log(key, ":-", vlaue)
+// }
