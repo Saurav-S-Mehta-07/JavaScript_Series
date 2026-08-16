@@ -99,5 +99,25 @@ const users = [
 // console.log(tinderUser.hasOwnProperty('name'))
 
 // **************************************************************************
+//de structure 
+const course = {
+    coursename : "js",
+    price : "999",
+    courseInstructor  : "Saurav"
+}
 
+// console.log(course.courseInstructor);
+
+const {courseInstructor: instructor} = course
+
+// console.log(instructor)
+
+// ***************************
+// APIs
+
+// {
+//     "name" : "saurav",
+//     "coursename" : "JavaScript",
+//     "price" : "free"
+// }
 
