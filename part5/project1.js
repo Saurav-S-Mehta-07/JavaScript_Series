@@ -1,7 +1,6 @@
 document.querySelectorAll(".box").forEach((box)=>{
-   const id = (box.getAttribute("id"));
-   box.addEventListener("click", ()=>{
+   box.addEventListener("click", (event)=>{
       document.querySelector("body").
-      style.backgroundColor = id;
+      style.backgroundColor = event.target.getAttribute("id");
    })
 })
