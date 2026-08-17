@@ -1,0 +1,24 @@
+*{
+    background-color: black;
+    color: aliceblue;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1{
+    text-align: center;
+    background-color: orangered;
+    height: 50px;
+    width: 150px;
+    font-size: 1.5rem;
+    border: 1px solid orangered;
+    border-radius: 12px;
+    padding: 5px;
+}
