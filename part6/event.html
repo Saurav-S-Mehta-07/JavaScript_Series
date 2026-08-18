@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        a{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Amazing Images</h1>
+    <ul id ="images">
+        <li><img src="https://images.pexels.com/photos/11326583/pexels-photo-11326583.jpeg" alt="photoshop" id="sweet"></li>
+        <li><img src="https://images.pexels.com/photos/37345053/pexels-photo-37345053.jpeg" alt=""></li>
+        <li><img src="https://images.pexels.com/photos/29590815/pexels-photo-29590815.jpeg" alt=""></li>
+        <li><img src="https://images.pexels.com/photos/13278279/pexels-photo-13278279.jpeg" alt=""></li>
+        <li><img src="https://images.pexels.com/photos/38958588/pexels-photo-38958588.jpeg" alt=""></li>
+         <li><a href="https://www.google.com"></a>Google</a></li>
+    </ul>
+</body>
+<script>
+  
+
+//   document.getElementById("sweet").onclick = function (){
+//     alert("Sweet");
+//   }
+
+    document.getElementById("sweet").addEventListener("click",()=>{
+        console.log("1");
+    })
+    
+
+</script>
+</html>
