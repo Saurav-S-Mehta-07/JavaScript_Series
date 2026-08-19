@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=10, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Saurav Singh Mehta</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const saySaurav = function(){
+        console.log("Saurav Singh Mehta")
+    }
+    const changeText = function(){
+        document.querySelector("h1").innerHTML= "best Js Series"
+    }
+
+    const changeMe = setTimeout(changeText, 2000);
+
+    document.querySelector("#stop").addEventListener("click", ()=>{
+        clearTimeout(changeMe);
+        console.log("stopped");
+    })
+
+</script>
+</html>
