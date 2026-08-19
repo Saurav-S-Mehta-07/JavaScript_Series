@@ -9,9 +9,18 @@
             background-color: black;
             color: white;
         }
-        img{
-            height: 200px;
-            width: 200px;
+        #main{
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        #main div{
+            height: 100px;
+            width: 100px;
+            margin-bottom: 10px;
+            background-color: white;
+            color: blue;
         }
         a{
             color: aliceblue;
@@ -20,14 +29,15 @@
 </head>
 <body>
     <h1>Amazing Images</h1>
-    <ul id ="images">
-        <li><img src="https://images.pexels.com/photos/11326583/pexels-photo-11326583.jpeg" alt="photoshop" id="sweet"></li>
-        <li><img src="https://images.pexels.com/photos/37345053/pexels-photo-37345053.jpeg" alt=""></li>
-        <li><img src="https://images.pexels.com/photos/29590815/pexels-photo-29590815.jpeg" alt=""></li>
-        <li><img src="https://images.pexels.com/photos/13278279/pexels-photo-13278279.jpeg" alt=""></li>
-        <li><img src="https://images.pexels.com/photos/38958588/pexels-photo-38958588.jpeg" alt=""></li>
-         <li><a href="https://www.google.com"></a>Google</a></li>
-    </ul>
+    <div id="main">
+        <div id="one">div 1</div>
+        <div id="two">dev 2</div>
+        <div id="three">dev 3</div>
+        <div id="four">dev 4</div>
+        <div id="five">dev 5</div>
+        <div id="six">dev 6</div>
+        <a id="google" href="https://www.google.com">Google</a>
+    </div>
 </body>
 <script>
   
@@ -36,10 +46,27 @@
 //     alert("Sweet");
 //   }
 
-    document.getElementById("sweet").addEventListener("click",()=>{
-        console.log("1");
-    })
+  
     
+    // type, timestamp, defaultPrevented
+    // target, toElement, scrElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, keyCode
+
+    // document.getElementById("main").addEventListener("click",()=>{
+    //     console.log("Clicked inside the main");
+    // }, false)
+
+    // document.getElementById("one").addEventListener("click",(event)=>{
+    //     console.log("one clicked");
+    //     event.stopPropagation()
+    // }, false)
+
+
+    // document.getElementById("google").addEventListener("click", (e)=>{
+    //     e.preventDefault();
+    //     console.log("google clicked");
+    // })
 
 </script>
 </html>
