@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval</title>
+</head>
+<body style="background-color: black; color: white;">
+    <div>
+        <h1>Set Interval Color Changer</h1>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+</body>
+<script>
+    
+
+    const randomColor = function(){
+        const hex = "0123456789ABCDEF";
+        let color = "#";
+        for(let i = 0; i< 6; i++){
+           color += hex[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    const body = document.querySelector("body");
+    let intervalId;
+
+    const changeColor = function(){
+        body.style.backgroundColor = randomColor();
+    }
+    document.querySelector("#start").addEventListener("click",()=>{
+        if(!intervalId){
+             intervalId = setInterval(changeColor, 500);
+        }
+    })
+    
+    document.querySelector("#stop").addEventListener("click", ()=>{
+        clearInterval(intervalId);
+        intervalId = null;
+        console.log("stopped");
+    })
+
+</script>
+</html>
