@@ -46,8 +46,7 @@
 //     alert("Sweet");
 //   }
 
-  
-    
+
     // type, timestamp, defaultPrevented
     // target, toElement, scrElement, currentTarget,
     // clientX, clientY, screenX, screenY
@@ -63,10 +62,35 @@
     // }, false)
 
 
-    // document.getElementById("google").addEventListener("click", (e)=>{
-    //     e.preventDefault();
-    //     console.log("google clicked");
+    document.getElementById("google").addEventListener("click", (e)=>{
+        e.preventDefault();
+        console.log("google clicked");
+    })
+
+
+    // click div and delete that div
+
+
+     // const AllDiv = document.querySelectorAll("#main div");
+    // AllDiv.forEach((item, index)=>{
+    //     item.addEventListener("click", ()=>{
+    //         item.remove();
+    //     })
     // })
+
+    const mainDiv = document.querySelector("#main");
+    mainDiv.addEventListener("click", (e)=>{
+        // console.log(e.target);
+        // if(e.target.tagName == 'DIV'){
+        //   let removeList = e.target;
+        //   removeList.remove(); 
+        // }
+        
+        mainDiv.removeChild(e.target);
+
+    })
+
+   
 
 </script>
 </html>
