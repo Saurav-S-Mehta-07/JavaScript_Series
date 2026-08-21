@@ -1,0 +1,19 @@
+// javascript and classes -> but these are prototype
+ 
+// OOP
+
+// object
+// - collection of properties and methods
+
+
+// why use OOP
+
+// object literal
+
+// Constructor function
+
+// classes
+// Instances (new, this)
+
+// 4 pillars
+// Abstraction, Ecapsulation, Inheritance, Polymorphism
