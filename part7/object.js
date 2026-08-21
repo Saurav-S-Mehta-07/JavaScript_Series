@@ -35,7 +35,7 @@ Here's what happens behind the scenes when the new keyword is used:
 
 A new object is created ; the new keyword initiates the creation of a new JS object,
 
-A prototype is linked: the newly created object gets linked to the prototype promperty of 
+A prototype is linked: the newly created object gets linked to the prototype property of 
 the constructor function. This means that it has access to properties and methods defined
 on the constructor's prototype.
 
