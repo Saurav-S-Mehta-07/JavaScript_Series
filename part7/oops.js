@@ -26,6 +26,10 @@ function User(username, loginCount, isLoggedIn){
     this.loginCount = loginCount
     this.isLoggedIn =  isLoggedIn
 
+    this.greeting  = function(){
+        console.log("welcome ", this.user);
+    }
+
     return this
 }
 
@@ -35,5 +39,7 @@ function User(username, loginCount, isLoggedIn){
 
 const user1 = new User("saurav", 12, true)
 const user2 = new  User("gaurav", 4, true)
-console.log(user1) 
-console.log(user2)
+// console.log(user1) 
+// console.log(user2)
+
+console.log(user1.constructor);
