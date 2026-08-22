@@ -66,7 +66,24 @@ String.prototype.trueLength = function(){
     console.log(`True length is : ${this.trim().length}`);
 }
 
-anotherUsername.trueLength();
+// anotherUsername.trueLength();
 
-"mayank".trueLength()
-"iceteam".trueLength()
+// "mayank".trueLength()
+// "iceteam".trueLength()
+
+
+// call
+
+function setUsername(username){
+    this.username = username
+}
+
+function createUser(username, email, password){
+    // setUsername(username) 
+    setUsername.call(this, username)
+    this.email = email
+    this.password = password
+}
+
+const user = new createUser("saurav", "email@gmail.com", "1234");
+console.log(user);
