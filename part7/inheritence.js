@@ -23,3 +23,14 @@ class Teacher extends User{
 const t1 = new Teacher("Mayank", "email", "123")
 console.log(t1)
 t1.addCourse()
+
+
+const user = new User("Saurav")
+console.log(user)
+user.logMe()
+
+t1.logMe()
+
+
+console.log(t1 instanceof User)
+console.log(t1 instanceof Teacher)
